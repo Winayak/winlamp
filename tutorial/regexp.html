@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JS RegExp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function display()
+{
+var v="<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+
+</body>
+</html>"
+     
+
+document.getElementById('id1').innerHTML=v;
+
+}
+
+
+</script>
+<style>
+
+
+.well 
+{
+    background: rgb(151	,255,255);
+}
+</style>
+
+
+</head>
+<body> 
+
+<div class="container">
+  <h1>JS RegExp </h1>
+
+  <div class="well">
+  -->A regular expression is a sequence of characters that forms a <b>search pattern.</b>
+  </div>
+  
+  <div class="well">
+  -->Regular expressions can be used to perform all types of <b>text search and text replace .</b>operations.
+
+
+  </div>
+  
+  <div class="well">
+   -->Syntax :<b>/pattern/modifiers</b>;
+
+  </div>
+
+  <div class="well">
+   -->The <b>search() </b>method uses an expression to search for a match, and returns the position of the match.
+
+
+  </div>
+
+<div class="well">
+   -->The <b>replace() </b>method returns a modified string where the pattern is replaced.
+</div>
+
+  <p id="id1"></p>
+  
+  <button type="button" class="btn btn-danger btn-lg"  onClick="display()">Try it Yourself</button>
+  <br>
+  
+
+</div>
+
+</body>
+</html>

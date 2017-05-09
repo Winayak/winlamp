@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>String Methods and Properties</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function display()
+{
+var v="<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+
+</body>
+</html>"
+     
+
+document.getElementById('id1').innerHTML=v;
+
+}
+
+
+</script>
+<style>
+
+
+.well 
+{
+    background: rgb(151	,255,255);
+}
+</style>
+
+
+</head>
+<body> 
+
+<div class="container">
+  <h1>String Methods and Properties</h1>
+
+  <div class="well">
+  --></b>length </b>property returns the length of a string
+  </div>
+  
+  <div class="well">
+  --><b>indexOf() </b>method returns the index of (the position of) the first occurrence of a specified text in a string:
+  </div>
+  
+  <div class="well">
+   --> <b>lastIndexOf() </b>method returns the index of the last occurrence of a specified text in a string:
+  </div>
+
+  <div class="well">
+   --><b>search() </b>method searches a string for a specified value and returns the position of the match:
+  </div>
+  
+   <div class="well">
+   --><b>slice() </b>extracts a part of a string and returns the extracted part in a new string.
+  </div>
+   
+  <div class="well">
+   --><b>charCodeAt() </b>method returns the unicode of the character at a specified index in a string:
+  </div>
+
+
+    <p id="id1"></p>
+  
+
+
+
+  <button type="button" class="btn btn-danger btn-lg"  onClick="display()">Try it Yourself</button>
+  <br>
+  
+
+</div>
+
+</body>
+</html>

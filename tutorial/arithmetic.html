@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Js DataTypes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function display()
+{
+var v="&lt;html&gt;  <br>
+       &lt;body&gt;    <br>
+    &lt;p id="demo"&gt; &lt; /p&gt;  <br>
+
+&lt;script&gt;    <br>
+var person = {            <br>
+    firstName : "John",   <br>
+    lastName  : "Doe",      <br>
+    age       : 50,         <br>
+    eyeColor  : "blue"      <br>
+};<br>
+
+document.getElementById("demo").innerHTML =              <br>
+person.firstName + " is " + person.age + " years old.";   <br>
+&lt;/script&gt;                   <br>
+
+&lt;/body&gt;           <br>
+&lt;/html&gt; "         
+
+     
+
+document.getElementById('id1').innerHTML=v;
+
+}
+
+
+</script>
+<style>
+
+
+.well 
+{
+    background: rgb(151	,255,255);
+}
+</style>
+
+
+</head>
+<body> 
+
+<div class="container">
+  <h1>Js DataTypes</h1>
+
+  <div class="well">
+  -->JavaScript has totally 4 data types.
+  </div>
+  
+  <div class="well">
+  -->JavaScript <b>Number</b>  :JavaScript has only one type of numbers.
+  </div>
+  
+  <div class="well">
+   -->JavaScript <b> Boolean </b>:Booleans can only have two values: true or false.
+  </div>
+
+  <div class="well">
+   -->JavaScript <b> String </b>: Strings are written with quotes. You can use single or double quotes:
+  </div>
+  
+  <div class="well">
+   -->JavaScript <b>Array </b>:JavaScript arrays are written with square brackets.
+   </div>
+
+  <div class="well">
+   -->JavaScript <b>Object</b>:Object properties are written as name:value pairs, separated by commas.
+  </div>
+ 
+   <p id="id1"></p>
+  <button type="button" class="btn btn-danger btn-lg"  onClick="display()">Try it Yourself</button>
+  <br>
+  
+
+</div>
+
+</body>
+</html>

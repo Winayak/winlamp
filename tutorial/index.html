@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body 
+{
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+@media screen and (max-height: 450px)
+ {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="intro.html">JS Introduction</a>
+  <a href="variable.html">JS Variables</a>
+  <a href="DataType.html">JS Data Types</a>
+  <a href="event.html">JS Events</a>
+  <a href="string.html">JS String </a>
+  <a href="stringmethod.html">JS Strings Methods</a>
+  <a href="numbermethod.html">JS Number  Methods</a>
+  <a href="regexp.html">JS RegExp</a>
+  <a href="function.html">JS Functions</a>
+  <a href="object.html">JS Object</a>
+  <a href="arithmetic.html">JS Arithmetic</a>
+  <a href="practise.html">JS BestPractises</a>
+  <a href="dom.html">JS DOM Model</a>
+  
+</div>
+
+
+
+<div class="container">
+
+  <h1>JavaScript Tutorial</h1>
+
+<br>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Start Learning</span>
+<img src="http://primefusion.net/blog/wp-content/uploads/2016/10/Javascript-shopping-cart.png"  alt="Cinque Terre" width="1200" height="236">
+<h2><p>Do you know these facts?</p></h2>
+
+<h3>1)--><b>Java Script</b> is most using programming language</h3>
+<h3>2)-->Thanks to <b>automatic type</b> conversion</h3>
+<h3>3)--><b>JavaScript</b> doesn’t have an integer data type!!!</h3>
+<h3>4)-->There is no relation between <b>JAVA</b> and Javascript</h3>
+
+
+</div>
+
+
+<script>
+function openNav()
+ {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav()
+{
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+   
+</body>
+</html> 
+

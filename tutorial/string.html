@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function display()
+{
+var v="<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+
+</body>
+</html>"
+     
+
+document.getElementById('id1').innerHTML=v;
+
+}
+
+
+</script>
+<style>
+
+
+.well 
+{
+    background: rgb(151	,255,255);
+}
+</style>
+
+
+</head>
+<body> 
+
+<div class="container">
+  <h1>Js String </h1>
+
+  <div class="well">
+  --> <b>String </b>can be any text inside quotes. You can use single or double quotes:
+  </div>
+  
+  <div class="well">
+  -->JavaScript strings are used for storing and <b>manipulating</b> text.
+  </div>
+  
+  <div class="well">
+   -->Strings can also be defined as <b>objects</b> with the keyword new: var firstName = new String("John")
+  </div>
+
+  
+  <p id="id1"></p>
+  
+  <button type="button" class="btn btn-danger btn-lg"  onClick="display()">Try it Yourself</button>
+  <br>
+  
+
+</div>
+
+</body>
+</html>
