@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JS RegExp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function display()
+{
+document.getElementById('id1').innerHTML='&lt;html&gt;<br> &lt;body&gt;<br>&lt;h2&gt;My First JavaScript&lt;/h2&gt;<br>&lt;button type="button"<br> onclick="document.getElementById("demo").innerHTML = Date()"&gt;Click me to display Date and Time.&lt;/button&gt;<br>&lt;p id="demo"&gt;&lt;/p&gt;<br>&lt;/body&gt;<br>&lt;/html&gt; ';
+
+}
+
+
+</script>
+<style>
+
+
+.well 
+{
+    background: rgb(151	,255,255);
+}
+</style>
+
+
+</head>
+<body> 
+
+<div class="container">
+  <h1>JS BestPractise </h1>
+
+  <div class="well">
+  -->Avoid <b>Global</b> Variables</b>
+  </div>
+  
+  <div class="well">
+  -->Always Declare <b> Local </b>Variables
+
+
+  </div>
+  
+  <div class="well">
+   -->Keep </b>Declarations </b>on Top
+
+  </div>
+
+  <div class="well">
+   -->The <b>search() </b>method uses an expression to search for a match, and returns the position of the match.
+
+
+  </div>
+
+<div class="well">
+   --><b>Initialize </b>Variables
+</div>
+
+<div class="well">
+-->Don't Use </b>new Object()</b>
+</div>
+ 
+ <div class="well">
+-->Beware of <b>Automatic Type Conversions</b>
+</div>
+
+<p id="id1"></p>
+  
+
+  <button type="button" class="btn btn-danger btn-lg"  onClick="display()">Try it Yourself</button>
+  <br>
+  
+
+</div>
+
+</body>
+</html>
