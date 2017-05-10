@@ -10,32 +10,9 @@
 <script>
 function display()
 {
-var v="&lt;html&gt;  <br>
-       &lt;body&gt;    <br>
-    &lt;p id="demo"&gt; &lt; /p&gt;  <br>
-
-&lt;script&gt;    <br>
-var person = {            <br>
-    firstName : "John",   <br>
-    lastName  : "Doe",      <br>
-    age       : 50,         <br>
-    eyeColor  : "blue"      <br>
-};<br>
-
-document.getElementById("demo").innerHTML =              <br>
-person.firstName + " is " + person.age + " years old.";   <br>
-&lt;/script&gt;                   <br>
-
-&lt;/body&gt;           <br>
-&lt;/html&gt; "         
-
-     
-
-document.getElementById('id1').innerHTML=v;
+document.getElementById('id1').innerHTML='&lt;html&gt;<br> &lt;body&gt;<br>&lt;h2&gt;My First JavaScript&lt;/h2&gt;<br>&lt;button type="button"<br> onclick="document.getElementById("demo").innerHTML = Date()"&gt;Click me to display Date and Time.&lt;/button&gt;<br>&lt;p id="demo"&gt;&lt;/p&gt;<br>&lt;/body&gt;<br>&lt;/html&gt; ';
 
 }
-
-
 </script>
 <style>
 
