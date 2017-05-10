@@ -13,6 +13,16 @@ body
     transition: background-color .5s;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+    color: white;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -29,7 +39,7 @@ body
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -43,7 +53,7 @@ body
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 30px;
     margin-left: 50px;
 }
 
@@ -54,6 +64,10 @@ body
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.bg-4 { 
+      background-color: #333; /* Black Gray */
+      color: #333;
+     } 
 </style>
 </head>
 <body>
@@ -78,25 +92,34 @@ body
 
 
 
-<div class="container">
 
+<ul>
   <h1>JavaScript Tutorial</h1>
-
+</ul>
+<div class="container">
 <br>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Start Learning</span>
-<img src="http://primefusion.net/blog/wp-content/uploads/2016/10/Javascript-shopping-cart.png"  alt="Cinque Terre" width="1200" height="236">
-<h2><p>Do you know these facts?</p></h2>
+<img src="http://primefusion.net/blog/wp-content/uploads/2016/10/Javascript-shopping-cart.png"  alt="Cinque Terre" width="1100" height="236">
+<h2><p><b>Do you know these facts?</b></p></h2>
+<br>
+<h4>1)--><b>Java Script</b> is widely used programming language</h4>
+<h4>2)-->Thanks to <b>automatic type</b> conversion</h4>
+<h4>3)--><b>JavaScript</b> doesn't have an integer data type!!!</h4>
+<h4>4)-->There is no relation between <b>JAVA</b> and Javascript</h4>
+<br>
 
-<h3>1)--><b>Java Script</b> is most using programming language</h3>
-<h3>2)-->Thanks to <b>automatic type</b> conversion</h3>
-<h3>3)--><b>JavaScript</b> doesn’t have an integer data type!!!</h3>
-<h3>4)-->There is no relation between <b>JAVA</b> and Javascript</h3>
+
+<button type="button" class="btn btn-success" btn-lg" onclick="gonext()">Click here to Know More</button>
 
 
 </div>
 
 
 <script>
+function gonext()
+{
+window.location.href = 'http:///www.javatpoint.com/javascript-tutorial';
+}
 function openNav()
  {
     document.getElementById("mySidenav").style.width = "250px";
@@ -111,7 +134,13 @@ function closeNav()
     document.body.style.backgroundColor = "white";
 }
 </script>
-   
+
+  <footer class="container-fluid bg-4 text-center">
+  <p>Web designed by <a href="https://Google.com">Winayak</a></p> 
+  <p>Contact Details:<a>vinayak.savadi84@gmail.com</a>
+
+</footer>
+
 </body>
-</html> 
+</html>
 
