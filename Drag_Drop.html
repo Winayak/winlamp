@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Auto-scroll</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #a, #b, #c, #d,#e,#f,#g,#h,#i,#j,#k,#l,#m,#n,#o,#p,#q,#r,#s,#t,#u,#v,#w,#x,#y,#z{ width: 60px; height: 60px; padding: 0.5em; float: left; margin: 0 10px 10px 0;background-color:"cyan" }
+  #dvSource, #dvDest1,#dvDest2,#dvDest3,#dvDest4,#dvDest5,#dvDest6,#dvDest7
+   {
+    border: 5px solid #ccc;
+    padding: 5px;
+    min-height: 100px;
+    width: 630px;
+    
+   }
+   
+   .u1
+   {
+   background-color: #333;
+  
+   top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    font:"yellow";
+     height: 80px;
+   }
+  
+  </style>
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#a" ).draggable({ scroll: true });
+    $( "#b" ).draggable({ scroll: true });
+    $( "#c" ).draggable({ scroll: true });
+    $( "#d" ).draggable({ scroll: true });
+    $( "#e" ).draggable({ scroll: true });
+    $( "#f" ).draggable({ scroll: true });
+    $( "#g" ).draggable({ scroll: true });
+    $( "#g" ).draggable({ scroll: true });
+    $( "#h" ).draggable({ scroll: true });
+    $( "#i" ).draggable({ scroll: true });
+    $( "#j" ).draggable({ scroll: true });
+    $( "#k" ).draggable({ scroll: true });
+    $( "#l" ).draggable({ scroll: true });
+    $( "#m" ).draggable({ scroll: true });
+    $( "#n" ).draggable({ scroll: true });
+    $( "#o" ).draggable({ scroll: true });
+    $( "#p" ).draggable({ scroll: true });
+    $( "#q" ).draggable({ scroll: true });
+    $( "#r" ).draggable({ scroll: true });
+    $( "#s" ).draggable({ scroll: true });
+    $( "#t" ).draggable({ scroll: true });
+    $( "#u" ).draggable({ scroll: true });
+    $( "#v" ).draggable({ scroll: true });
+    $( "#w" ).draggable({ scroll: true });
+    $( "#x" ).draggable({ scroll: true });
+    $( "#y" ).draggable({ scroll: true });
+    $( "#z" ).draggable({ scroll: true });
+  } );
+  
+$( function() 
+{
+	  
+	   $( "#dvDest1" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        alert(x5);
+	      }
+	     
+	    });
+	   
+	   $( "#dvDest2" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        alert(x5);
+	      }
+	     
+	    });
+	   
+	   $( "#dvDest3" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        alert(x5);
+	      }
+	     
+	    });
+	   
+	   $( "#dvDest4" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        alert(x5);
+	      }
+	     
+	    });
+	   
+	   $( "#dvDest5" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        alert(x5);
+	      }
+	     
+	    });
+	   
+	   $( "#dvDest6" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        alert(x5);
+	      }
+	     
+	    });
+	   
+	   $( "#dvDest7" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        alert(x5);
+	      }
+	     
+	    });
+	  } );
+  </script>
+</head>
+<body bgcolor="orange">
+<div class="u1">
+ <font color="yellow"><ul> <h1>Guess Answer</h1></ul></font></div>
+ <br>
+ 
+
+<div id="a" class="ui-widget-content">
+  <h1><p>A</p></h1>
+</div>
+ 
+ <div id="b" class="ui-widget-content">
+  <h1><p>B</p></h1>
+</div>
+<div id="c" class="ui-widget-content">
+  <h1><p>C</p></h1>
+</div>
+<div id="d" class="ui-widget-content">
+  <h1><p>D</p></h1>
+</div>
+<div id="e" class="ui-widget-content">
+  <h1><p>E</p></h1>
+</div>
+<div id="f" class="ui-widget-content">
+  <h1><p>F</p></h1>
+</div>
+<div id="g" class="ui-widget-content">
+  <h1><p>G</p></h1>
+</div>
+<div id="h" class="ui-widget-content">
+  <h1><p>H</p></h1>
+</div>
+<div id="i" class="ui-widget-content">
+  <h1><p>I</p></h1>
+</div>
+<div id="j" class="ui-widget-content">
+  <h1><p>J</p></h1>
+</div>
+<div id="k" class="ui-widget-content">
+  <h1><p>K</p></h1>
+</div>
+<div id="l" class="ui-widget-content">
+  <h1><p>L</p></h1>
+</div>
+<div id="m" class="ui-widget-content">
+  <h1><p>M</p></h1>
+</div>
+<div id="n" class="ui-widget-content">
+  <h1><p>N</p></h1>
+</div>
+<div id="o" class="ui-widget-content">
+  <h1><p>O</p></h1>
+</div>
+<div id="p" class="ui-widget-content">
+  <h1><p>P</p></h1>
+</div>
+<div id="q" class="ui-widget-content">
+  <h1><p>q</p></h1>
+</div>
+<div id="r" class="ui-widget-content">
+  <h1><p>R</p></h1>
+</div>
+<div id="s" class="ui-widget-content">
+  <h1><p>S</p></h1>
+</div>
+
+ <div id="t" class="ui-widget-content">
+  <h1><p>T</p></h1>
+</div>
+ 
+ <div id="u" class="ui-widget-content">
+  <h1><p>U</p></h1>
+</div>
+ 
+ <div id="v" class="ui-widget-content">
+  <h1><p>V</p></h1>
+</div>
+
+<div id="w" class="ui-widget-content">
+  <h1><p>W</p></h1>
+</div>
+<div id="x" class="ui-widget-content">
+  <h1><p>X</p></h1>
+</div>
+
+<div id="y" class="ui-widget-content">
+  <h1><p>Y</p></h1>
+</div>
+
+<div id="z" class="ui-widget-content">
+  <h1><p>Z</p></h1>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br>
+<h3>Who is President of India?</h3>
+<div id="dvDest1">
+    Drop here
+</div>
+<button onClick="validate1()">Validate </button>
+<br>
+
+<h3>Which city is capital of India?</h3>
+<div id="dvDest2">
+    Drop here
+</div>
+<button onClick="validate1()">Validate </button>
+<br>
+
+<h3>Who is PrimeMinister of India?</h3>
+<div id="dvDest3">
+    Drop here
+</div>
+<button onClick="validate1()">Validate </button>
+<br>
+
+<h3>Who is President of India?</h3>
+<div id="dvDest4">
+    Drop here
+</div>
+<button onClick="validate1()">Validate </button>
+<br>
+
+<h3>What is National game of India?</h3>
+<div id="dvDest5">
+    Drop here
+</div>
+<button onClick="validate1()">Validate </button>
+<br>
+
+<h3>Who is owner of Apple?</h3>
+<div id="dvDest6">
+    Drop here
+</div>
+<button onClick="validate1()">Validate </button>
+<br>
+</body>
+</html>
