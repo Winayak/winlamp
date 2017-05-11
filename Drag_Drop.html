@@ -33,47 +33,57 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $( function() {
-    $( "#a" ).draggable({ scroll: true });
-    $( "#b" ).draggable({ scroll: true });
-    $( "#c" ).draggable({ scroll: true });
-    $( "#d" ).draggable({ scroll: true });
-    $( "#e" ).draggable({ scroll: true });
-    $( "#f" ).draggable({ scroll: true });
-    $( "#g" ).draggable({ scroll: true });
-    $( "#g" ).draggable({ scroll: true });
-    $( "#h" ).draggable({ scroll: true });
-    $( "#i" ).draggable({ scroll: true });
-    $( "#j" ).draggable({ scroll: true });
-    $( "#k" ).draggable({ scroll: true });
-    $( "#l" ).draggable({ scroll: true });
-    $( "#m" ).draggable({ scroll: true });
-    $( "#n" ).draggable({ scroll: true });
-    $( "#o" ).draggable({ scroll: true });
-    $( "#p" ).draggable({ scroll: true });
-    $( "#q" ).draggable({ scroll: true });
-    $( "#r" ).draggable({ scroll: true });
-    $( "#s" ).draggable({ scroll: true });
-    $( "#t" ).draggable({ scroll: true });
-    $( "#u" ).draggable({ scroll: true });
-    $( "#v" ).draggable({ scroll: true });
-    $( "#w" ).draggable({ scroll: true });
-    $( "#x" ).draggable({ scroll: true });
-    $( "#y" ).draggable({ scroll: true });
-    $( "#z" ).draggable({ scroll: true });
+    $( "#a" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#b" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#c" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#d" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#e" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#f" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#g" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#g" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#h" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#i" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#j" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#k" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#l" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#m" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#n" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#o" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#p" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#q" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#r" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#s" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#t" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#u" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#v" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#w" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#x" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#y" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#z" ).draggable({ scroll: true },{helper: "clone"});
   } );
   
 $( function() 
-{
+{               var y="";
+                var temp="";
 	  
 	   $( "#dvDest1" ).droppable
 	   ({
+                 
+
 	      drop: function( event, ui )
 	      {
-	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+                 
+               temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
 	         
 	       
 	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
-	        alert(x5);
+	        y=y+ui.draggable.attr("id");
+                
+                 
+                 
+                 
+                
 	      }
 	     
 	    });
@@ -82,37 +92,56 @@ $( function()
 	   ({
 	      drop: function( event, ui )
 	      {
-	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+                 
+               temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
 	         
 	       
 	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
-	        alert(x5);
+	        y=y+ui.draggable.attr("id");
+                
+                
+                 
+                 
+                
 	      }
 	     
 	    });
-	   
-	   $( "#dvDest3" ).droppable
+	 $( "#dvDest3" ).droppable
 	   ({
 	      drop: function( event, ui )
 	      {
-	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+                 
+               temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
 	         
 	       
 	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
-	        alert(x5);
+	        y=y+ui.draggable.attr("id");
+                
+                
+                 
+                 
+                
 	      }
 	     
 	    });
-	   
 	   $( "#dvDest4" ).droppable
 	   ({
 	      drop: function( event, ui )
 	      {
-	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+                 
+               temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
 	         
 	       
 	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
-	        alert(x5);
+	        y=y+ui.draggable.attr("id");
+                
+                
+                 
+                 
+                
 	      }
 	     
 	    });
@@ -121,11 +150,18 @@ $( function()
 	   ({
 	      drop: function( event, ui )
 	      {
-	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+                 
+               temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
 	         
 	       
 	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
-	        alert(x5);
+	        y=y+ui.draggable.attr("id");
+                
+                
+                 
+                 
+                
 	      }
 	     
 	    });
@@ -134,15 +170,21 @@ $( function()
 	   ({
 	      drop: function( event, ui )
 	      {
-	        $( this ).addClass( "ui-state-highlight" ).html( "Dropped!" );
+                 
+               temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
 	         
 	       
 	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
-	        alert(x5);
+	        y=y+ui.draggable.attr("id");
+                
+                
+                 
+                 
+                
 	      }
 	     
 	    });
-	   
 	   $( "#dvDest7" ).droppable
 	   ({
 	      drop: function( event, ui )
@@ -151,11 +193,99 @@ $( function()
 	         
 	       
 	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
-	        alert(x5);
+	        
 	      }
 	     
 	    });
 	  } );
+
+     function validate1()
+     {
+       var value=document.getElementById('dvDest1').innerHTML;
+     
+       if(value=='india')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+       location.reload();
+     }
+      
+      function validate2()
+     {
+       var value=document.getElementById('dvDest2').innerHTML;
+     
+       if(value=='delhi')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+       location.reload();
+     }
+
+     function validate3()
+     {
+       var value=document.getElementById('dvDest3').innerHTML;
+     
+       if(value=='modi')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+       location.reload();
+     }
+
+
+
+    function validate4()
+     {
+       var value=document.getElementById('dvDest4').innerHTML;
+     
+       if(value=='pranab')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+       location.reload();
+     }
+
+
+     function validate5()
+     {
+       var value=document.getElementById('dvDest5').innerHTML;
+     
+       if(value=='hockey')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+       location.reload();
+     }
+
+     function validate6()
+     {
+       var value=document.getElementById('dvDest6').innerHTML;
+     
+       if(value=='stevejobs')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+       location.reload();
+     }
+
   </script>
 </head>
 <body bgcolor="orange">
@@ -255,46 +385,46 @@ $( function()
 <br>
 <br>
 <br><br><br><br><br><br><br>
-<h3>Who is President of India?</h3>
+<h3>What is Name of your Country?</h3>
 <div id="dvDest1">
     Drop here
 </div>
-<button onClick="validate1()">Validate </button>
+<button onClick="validate1()">Validate and Go next </button>
 <br>
 
 <h3>Which city is capital of India?</h3>
 <div id="dvDest2">
     Drop here
 </div>
-<button onClick="validate1()">Validate </button>
+<button onClick="validate2()">Validate and Go next </button>
 <br>
 
 <h3>Who is PrimeMinister of India?</h3>
 <div id="dvDest3">
     Drop here
 </div>
-<button onClick="validate1()">Validate </button>
+<button onClick="validate3()">Validate and Go next </button>
 <br>
 
 <h3>Who is President of India?</h3>
 <div id="dvDest4">
     Drop here
 </div>
-<button onClick="validate1()">Validate </button>
+<button onClick="validate4()">Validate and Go next</button>
 <br>
 
 <h3>What is National game of India?</h3>
 <div id="dvDest5">
     Drop here
 </div>
-<button onClick="validate1()">Validate </button>
+<button onClick="validate5()">Validate and Go next </button>
 <br>
 
 <h3>Who is owner of Apple?</h3>
 <div id="dvDest6">
     Drop here
 </div>
-<button onClick="validate1()">Validate </button>
+<button onClick="validate6()">Validate and Go next </button>
 <br>
 </body>
 </html>
