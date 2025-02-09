@@ -5,3 +5,6 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/Winayak/winlamp.git
 git push -u origin master
+
+
+commit to new feature branch
